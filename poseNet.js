@@ -2,9 +2,11 @@ let video;
 let poseNet;
 let pose;
 let skeleton;
+let canvas = document.getElementById('cam')
 
 function setup() {
-    createCanvas(640, 480);
+    // createCanvas(640, 480);
+    canvas = createCanvas(640, 480, 'id= "dasa"');
     video = createCapture(VIDEO);
     video.hide();
     poseNet = ml5.poseNet(video);
@@ -38,3 +40,5 @@ function draw() {
         }
     }
 }
+
+

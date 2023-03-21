@@ -3,10 +3,35 @@
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
   <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <title>ml5js</title>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8" />
 </head>
 
 <body>
+<section class="Mobilenet">
+  <h2>Classification d'image par le modele "Mobilenet"</h2>
+  <div class="Classification">
+
+
+    <div id="divImg">
+      <input type="file" id="fileInput">
+      <img src="image/oiseau.jpg" id="image"  alt="image class"/>
+    </div>
+    <div id="divP">
+      <p> cette image est <span id="result">un oiseau</span> avec <span id="probability">100%</span> de chance </p>
+      <label>(il a peut être besoin de lunettes)</label>
+    </div>
+  </div>
+</section>
+<section id="camera">
+  <h2>Capteurs de parties du corps</h2>
+  <h3>Lachez vos meilleurs pas de danses</h3>
+</section>
+
 <script src="poseNet.js"></script>
+<script src="classifier.js"></script>
+
 </body>
 </html>
